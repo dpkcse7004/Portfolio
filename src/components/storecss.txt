@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    text-decoration: none;
+  }
+  
+  /* Main Navbar Styling */
+  .main-nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem;
+    color: white;
+  }
+  .logo {
+    font-size: 30px;
+    width:30%;
+    color:#ffbd39;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    line-height: 80px;
+  font-weight: 800;
+  }
+  .box-nav{
+    width: 50%;
+    margin:-100px;
+    background: #000000;
+  }
+  .box-nav ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  .nav-btn{
+    color: #ffbd39;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+.active-link{
+    color:  #ffffff;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    text-decoration: none;
+}
+  @media (max-width: 1050px) {
+    label.logo {
+      padding-left: 30px;
+    }
+    nav ul li {
+      font-size: 16px;
+    }
+  }
+  /* Responsive media query code for small screen */
+  @media (max-width: 890px) {
+    .checkbtn {
+      display: flex;
+    }
+    label.logo {
+      font-size: 22px;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #000000;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li {
+      display: block;
+      justify-content: center;
+      margin: 50px 0;
+      line-height: 30px;
+      text-decoration: none;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    .active-link {
+        color:  #ffffff;
+        font-size: x-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+  }
+  
+
+
+
+
+

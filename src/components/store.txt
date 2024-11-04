@@ -1,0 +1,119 @@
+import React, { useState } from 'react';
+import { IoMenu } from "react-icons/io5";
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+import { GiHamburgerMenu } from "react-icons/gi";
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
+
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);  // Toggle the menuOpen state
+    console.log("Menu icon clicked!");
+  };
+
+  return (
+    <nav className={`main-nav ${menuOpen ? 'menu-open' : ''}`}>
+      <label className='logo'>Portfolio</label>
+      <div className="box-nav">
+        <ul>
+          <li>
+            <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "nav-btn"}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : "nav-btn"}>About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/skills" className={({ isActive }) => isActive ? "active-link" : "nav-btn"}>Skills</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : "nav-btn"}>Contact</NavLink>
+          </li>
+        </ul>
+      </div>
+        <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import { useState } from 'react';
+// import { IoMenu } from "react-icons/io5";
+// import './Navbar.css'
+// import { NavLink } from 'react-router-dom';
+// const Navbar = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const handleMenuClick = () => {
+//     setMenuOpen(!menuOpen);  // Toggle the menuOpen state
+//     console.log("Menu icon clicked!");
+//   };
+// return (
+//   <nav className="main-nav">
+//       <label className='logo'>Portfolio</label>
+//     <div className="box-nav">
+//     <ul>
+//       <li>
+//           <NavLink to="/" className={({isActive})=> isActive ? "active-link" : "nav-btn"}>Home</NavLink>
+//       </li>
+//       <li>
+//           <NavLink to="/about" className={({isActive})=> isActive ? "active-link" : "nav-btn"}>About</NavLink>
+//       </li>
+//       <li>
+//           <NavLink to="/skills" className={({isActive})=> isActive ? "active-link" : "nav-btn"}>Skills</NavLink>
+//       </li>
+//       <li>
+//           <NavLink to="/contact" className={({isActive})=> isActive ? "active-link" : "nav-btn"}>Contact</NavLink>
+//       </li>
+//     </ul>
+//       </div>
+//       <IoMenu 
+//       onClick={handleMenuClick}
+//       size={30} style={{ color: 'blue' }}
+//       />
+//     </nav>
+//   )
+// }
+
+// export default Navbar
