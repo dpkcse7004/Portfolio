@@ -13,9 +13,6 @@ const Contact = () => {
       <div className='contact-form'>
             <Form></Form>
           </div>
-          {/* <div className="contact-title">
-            <p>Contact me</p>
-          </div> */}
            <center>
           <div>
             <center><p id='quote'>Below are the details to reach out to me!</p></center>
@@ -35,11 +32,7 @@ const Contact = () => {
             <button className="btn-c">Resume</button>
             </div>
           </div>
-          </center>
-          
-          
-            
-          
+          </center>    
     </div>
   )
 }
