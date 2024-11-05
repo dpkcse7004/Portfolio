@@ -54,16 +54,6 @@ const Details = () => {
                         </div>
                     </div >
                 </div >
-                <div className='btns'>
-                    <div className='btns-inner'>
-                        <button className="linked-in">Linked In</button>
-                        <button className="linked-in">Linked In</button>
-                        <button className="linked-in">Linked In</button>
-                    </div>
-                </div>
-
-
-
             </div>
         </>
     )

@@ -10,15 +10,10 @@ const Display = () => {
      <Hero></Hero>
       <center>
       <div className="details">
-        <center><Details></Details></center>
+        <Details></Details>
+        <Contact></Contact>
       </div>
       </center>
-      <center>
-      <div className="contact-menu">
-        <center><Contact></Contact></center>
-      </div>
-      </center>
-     
       </div>
     </>
   )

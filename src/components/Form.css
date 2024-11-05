@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-outer{
+    width: 100%;
+}
+.form-control{
+    width:350px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.pair{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.pair p{
+    font-size: 25px;
+}
+.contact-us-heading{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.contact-us-heading p{
+    font-size: 60px;
+    font-weight: 800;
+    color: #0ae115;
+    
+}
+label.form-check-label{
+    font-size: 16px;
+
+}
+input.form-check-input{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.send-part{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.send-btn{
+    height: 40px;
+    width: 100px;
+    background: #ffbd39;
+    border-style: none;
+}
+textarea.form-control::placeholder,
+input.form-control::placeholder{
+    font-size: 13px;
+}
+.send{
+    background: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    color:#000000;
+    
+}
+

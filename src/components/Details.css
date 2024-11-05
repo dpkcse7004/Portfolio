@@ -1,75 +1,91 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: black;
     color: #999999;
-    font-family:Arial, Helvetica, sans-serif;
-    border-style: none;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
-.detail-container{
+
+.detail-container {
     display: flex;
     flex-direction: column;
-}
-.detail-container ,.heading,.data ,.btns{
-border-style: solid;
+    align-items: center;
 }
 
-
-.heading h1{
-    border-color: aliceblue;
-    color:#0ae115;
+.heading h1 {
+    color: #0ae115;
     font-size: 60px;
     font-weight: 800;
+    text-align: center;
 }
 
-.introduction{
-    border-style: solid;
+.introduction {
     width: 100%;
+    max-width: 600px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #999999;
+    margin: 20px 0;
     text-align: left;
 }
-.introduction p{
-    color: #999999;
-}
-.btns{
+
+.btns {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.btns-inner{
-    width:50%;
+
+.btns-inner {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
 }
-.linked-in{
+
+.linked-in {
     height: 50px;
     width: 100px;
     border-radius: 50px;
     color: #000000;
-    border-style: none;
     background-color: #1eff0a;
     margin-top: 20px;
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 600;
 }
-.col-9,.col-3{
-    color: #999999;
-    font-size: 18px;
-    text-align: left;
-    border-style: none;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .introduction {
+        font-size: 16px;
+    }
+
+    .btns-inner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .linked-in {
+        width: 80%;
+        margin: 10px 0;
+    }
 }
-.data{
-    margin-top: 30px;
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .introduction {
+        font-size: 14px;
+    }
+
+    .btns-inner {
+        width: 100%;
+    }
 }
-.container-fluid{
-    border-style: none;
-}
+

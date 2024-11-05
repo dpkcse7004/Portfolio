@@ -1,48 +1,98 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     border-color: white;
 }
-.contact-container{
-    /* border-style: solid; */
+
+.contact-container {
     height: 100vh;
+    padding: 20px;
 }
-.contact-title{
-/* border-style: solid; */
-display: flex;
-justify-content: center;
-margin-top: 20px;
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-.contact-title p{
+
+.contact-title p {
     font-size: 60px;
     font-weight: 800;
-    color:#0ae115;
+    color: #0ae115;
 }
-#quote{
+
+#quote {
     font-size: 18px;
     font-weight: 500;
-    color:#999999;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.contact-box{
+
+.contact-box {
+    margin-top: -20px;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 60px;
-}
-.contact-box a img{
-    height: 80px;
-    width: 80px;
     /* border-style: solid; */
-    border-radius: 50%;
-    border-width: 5px;
-    border-color: #ffbd39;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-box a img {
+    height: 60px;
+    width: 60px;
+    border-radius: 40%;
     margin-bottom: 20px;
-    margin-left: 15px;
 }
-.contact-box div h3{
-    text-align: right;
-    color:#ffbd39;
+
+.contact-box-inner{
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border-style: solid; */
 }
-.abc{
+.btn-c{
+    background: #0ae115;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border-style: none;
+}
+
+.abc {
     font-size: 25px;
     font-weight: 200;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-title p {
+        font-size: 40px;
+    }
+
+    #quote {
+        font-size: 16px;
+    }
+
+    .contact-box a img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .abc {
+        font-size: 20px;
+    }
 }
